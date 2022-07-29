@@ -15,7 +15,7 @@ function RootStack() {
   return (
     <Stack.Navigator>
       <Stack.Screen name="MainTab" component={MainTab} options={{ headerShown: false }} />
-      <Stack.Screen name="Fourth" component={FourthScreen} />
+      <Stack.Screen name="Fourth" component={FourthScreen} options={{ headerShown: false }} />
     </Stack.Navigator>
   );
 }
