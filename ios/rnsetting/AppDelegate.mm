@@ -1,5 +1,6 @@
 #import "AppDelegate.h"
 #import "RNSplashScreen.h"
+#import <Firebase.h>
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
@@ -41,6 +42,10 @@
   bridge.surfacePresenter = _bridgeAdapter.surfacePresenter;
 #endif
 
+  if ([FIRApp defaultApp] == nil) {
+    [FIRApp configure];
+  }
+  
   UIView *rootView = RCTAppSetupDefaultRootView(bridge, @"rnsetting", nil);
 
   if (@available(iOS 13.0, *)) {

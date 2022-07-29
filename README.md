@@ -13,3 +13,18 @@ https://velog.io/@dody_/React-Native-%EC%95%B1-%EC%95%84%EC%9D%B4%EC%BD%98-%EB%B
 [스플래시스크린]
 [참고]
 https://velog.io/@hojin9622/React-Native-Splash-Screen-%EC%A0%9C%EC%9E%91IOS
+
+[디버그 서명 인증서 SHA-1]
+
+keytool -J-Duser.language=en -list -v -alias androiddebugkey -keystore ./android/app/debug.keystore
+
+SHA1: ~~~~~~~~~
+
+[Firebase]
+
+yarn add @react-native-firebase/app @react-native-firebase/auth @react-native-firebase/firestore @react-native-firebase/storage
+
+@react-native-firebase/app 은 Firebase 적용할때 반드시 필요한 라이브러리
+@react-native-firebase/auth 은 회원 인증을 위해 사용,
+@react-native-firebase/firestore 은 실시간 데이터베이스를 위해 필요,
+@react-native-firebase/storage은 추후 이미지를 업로드할 때 필요한 라이브러리

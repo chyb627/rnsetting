@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "113672863089",
+    "project_id": "rnsetting-71ee7",
+    "storage_bucket": "rnsetting-71ee7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113672863089:android:d0907d20860f1024f48ad0",
+        "android_client_info": {
+          "package_name": "com.chabiri.rnsetting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113672863089-19t4a7cpp0jr8gfrloauuf445vsmmjgf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chabiri.rnsetting",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "113672863089-dqtc9cke2nigqfo1huifip8bpfbeal0j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASBdV2ETIn8LM_7By8tL_Sh7CO6zYULe8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113672863089-dqtc9cke2nigqfo1huifip8bpfbeal0j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
