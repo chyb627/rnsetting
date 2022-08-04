@@ -1,10 +1,10 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, ActivityIndicator } from 'react-native';
 import CustomButton from '../components/CustomButton';
 import { useNavigation } from '@react-navigation/native';
 
-function SignInButton(props) {
-  const { isSignUp, onSubmit } = props;
+function SignButtons(props) {
+  const { isSignUp, onSubmit, loading } = props;
   const navigation = useNavigation();
 
   const primaryTitle = isSignUp ? '회원가입' : '로그인';
@@ -18,6 +18,14 @@ function SignInButton(props) {
     }
   };
 
+  if (loading) {
+    return (
+      <View style={styles.spinnerWrapper}>
+        <ActivityIndicator size={32} color="#6200ee" />
+      </View>
+    );
+  }
+
   return (
     <View style={styles.buttons}>
       <CustomButton title={primaryTitle} hasMarginBottom onPress={onSubmit} />
@@ -27,9 +35,15 @@ function SignInButton(props) {
 }
 
 const styles = StyleSheet.create({
+  spinnerWrapper: {
+    marginTop: 64,
+    height: 104,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   buttons: {
     marginTop: 64,
   },
 });
 
-export default SignInButton;
+export default SignButtons;
