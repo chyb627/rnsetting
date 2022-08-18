@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57">
+    <defs>
+        <style>
+            .cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.4px}.cls-2{stroke:#262626}.cls-3{stroke:#3194f7}
+        </style>
+    </defs>
+    <g id="ico_sale" transform="translate(-36 -259)">
+        <circle id="타원_14" data-name="타원 14" cx="28.5" cy="28.5" r="28.5" transform="translate(36 259)" style="fill:#f7f7f7"/>
+        <g id="그룹_139" data-name="그룹 139" transform="translate(52 274)">
+            <path id="패스_246" data-name="패스 246" class="cls-2" d="M24.462 21v1.98a1.317 1.317 0 0 1-1.317 1.32H20.51a1.317 1.317 0 0 1-1.317-1.317V21"/>
+            <path id="패스_247" data-name="패스 247" class="cls-2" d="M6.019 21v1.98A1.317 1.317 0 0 1 4.7 24.3H2.067A1.317 1.317 0 0 1 .75 22.98V21"/>
+            <path id="패스_248" data-name="패스 248" class="cls-2" d="M24.462 14.737V21H.75v-6.263a3.952 3.952 0 0 1 1.158-2.794l1.477-1.478h8.382"/>
+            <path id="선_115" data-name="선 115" class="cls-2" transform="translate(20.51 15.734)" d="M3.952 0 0 .329"/>
+            <path id="선_116" data-name="선 116" class="cls-2" transform="translate(.75 15.735)" d="M3.952.329 0 0"/>
+            <path id="패스_249" data-name="패스 249" class="cls-2" d="m7.337 21 1.317-3.952h7.9L17.876 21"/>
+            <path id="선_117" data-name="선 117" class="cls-2" transform="translate(.75 9.147)" d="M2.635.659 0 0"/>
+            <path id="패스_250" data-name="패스 250" class="cls-2" d="M3.385 10.465V9.8l1.1-4.133A3.293 3.293 0 0 1 7.668 3.22h3.763"/>
+            <path id="선_118" data-name="선 118" class="cls-3" transform="translate(19.193 3.775)" d="M0 0v4.458"/>
+            <path id="선_119" data-name="선 119" class="cls-3" transform="translate(16.963 6.004)" d="M0 0h4.458"/>
+            <path id="패스_251" data-name="패스 251" class="cls-3" d="M15.477 2.289a5.254 5.254 0 1 1 0 7.43 5.253 5.253 0 0 1 0-7.43"/>
+            <path id="패스_252" data-name="패스 252" class="cls-2" d="M23.406 13.026a4.376 4.376 0 0 1 1.056 1.71"/>
+        </g>
+    </g>
+</svg>

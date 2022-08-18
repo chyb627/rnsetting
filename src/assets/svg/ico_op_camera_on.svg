@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51">
+    <defs>
+        <style>
+            .cls-2,.cls-3{fill:none;stroke:#333;stroke-linecap:round;stroke-width:1.5px}.cls-2{stroke-linejoin:round}.cls-3{stroke-miterlimit:10}
+        </style>
+    </defs>
+    <g id="ico_op_camera_on" transform="translate(8.438 16)">
+        <circle id="타원_27" data-name="타원 27" class="cls-2" cx="3.37" cy="3.37" r="3.37" transform="translate(9.679 13.824)"/>
+        <path id="패스_163" data-name="패스 163" class="cls-3" d="M.75.75h8.125c1.269 0 2.971 1.417 4.241 2.8a6.519 6.519 0 0 0 .981.89l4.023 2.908v.011a3.039 3.039 0 0 1 2.218 2.889v4.195A3.087 3.087 0 0 1 17.2 17.48h-1.28" transform="translate(1)"/>
+        <path id="선_65" data-name="선 65" class="cls-3" transform="translate(1.75 17.48)" d="M0 0h7.176"/>
+        <path id="패스_164" data-name="패스 164" class="cls-2" d="M6.184 1.82v2.648s-.54 3.775 4.456 3.775h8.586" transform="translate(1)"/>
+        <path id="선_66" data-name="선 66" class="cls-2" transform="translate(18.957 13.893)" d="M0 0h1.844"/>
+        <path id="선_67" data-name="선 67" class="cls-2" transform="translate(7.598 10.801)" d="M0 0h2.081"/>
+        <path id="패스_165" data-name="패스 165" class="cls-2" d="m25.267 12.93 5.154 4.839a1.217 1.217 0 0 0 1.736-.076 8.315 8.315 0 0 0 0-11.308 1.217 1.217 0 0 0-1.736-.076l-5.154 4.839a1.21 1.21 0 0 0 0 1.782z" transform="translate(1)"/>
+    </g>
+</svg>

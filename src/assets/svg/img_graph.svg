@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="324" height="184" viewBox="0 0 324 184">
+    <defs>
+        <style>
+            .cls-2{fill:#e5e5e5}.cls-4{fill:#a8b1b9;font-size:9px;letter-spacing:-.025em;font-family:NotoSansKR-Regular,Noto Sans KR}.cls-7{fill:#85c3ff}
+        </style>
+    </defs>
+    <g id="img_graph" transform="translate(-18 -232)">
+        <path id="사각형_131" data-name="사각형 131" transform="translate(18 233)" style="fill:#fff" d="M0 0h324v183H0z"/>
+        <g id="graphy">
+            <path id="사각형_123" data-name="사각형 123" class="cls-2" transform="translate(73 237)" d="M0 0h259v1H0z"/>
+            <path id="사각형_124" data-name="사각형 124" class="cls-2" transform="translate(73 276)" d="M0 0h259v1H0z"/>
+            <path id="사각형_127" data-name="사각형 127" class="cls-2" transform="translate(73 354)" d="M0 0h259v1H0z"/>
+            <path id="사각형_125" data-name="사각형 125" class="cls-2" transform="translate(73 315)" d="M0 0h259v1H0z"/>
+            <path id="사각형_126" data-name="사각형 126" class="cls-2" transform="translate(73 393)" d="M0 0h259v1H0z"/>
+            <circle id="타원_31" data-name="타원 31" cx="9" cy="9" r="9" transform="translate(142 266)" style="fill:#bfdfff;opacity:.67"/>
+            <text id="_2_800만원" data-name="2,800만원" class="cls-4" transform="translate(24 242)"><tspan x="0" y="0">2,800만원</tspan></text>
+            <text id="_2_100만원" data-name="2,100만원" class="cls-4" transform="translate(24 279)"><tspan x="0" y="0">2,100만원</tspan></text>
+            <text id="_1_600만원" data-name="1,600만원" class="cls-4" transform="translate(24 320)"><tspan x="0" y="0">1,600만원</tspan></text>
+            <text id="_1_100만원" data-name="1,100만원" class="cls-4" transform="translate(24 359)"><tspan x="0" y="0">1,100만원</tspan></text>
+            <text id="_0만원" data-name="0만원" class="cls-4" transform="translate(41 398)"><tspan x="0" y="0">0만원</tspan></text>
+            <text id="_5만Km" data-name="5만Km" class="cls-4" transform="translate(109 412)"><tspan x="0" y="0">5만Km</tspan></text>
+            <text id="_0" data-name="0" transform="translate(71 412)" style="font-family:NotoSansKR-Medium,Noto Sans KR;font-weight:500;font-size:9px;letter-spacing:-.025em;fill:#a8b1b9"><tspan x="0" y="0">0</tspan></text>
+            <text id="_10만Km" data-name="10만Km" class="cls-4" transform="translate(161 412)"><tspan x="0" y="0">10만Km</tspan></text>
+            <text id="_15만Km" data-name="15만Km" class="cls-4" transform="translate(212 412)"><tspan x="0" y="0">15만Km</tspan></text>
+            <text id="_20만Km" data-name="20만Km" class="cls-4" transform="translate(263 412)"><tspan x="0" y="0">20만Km</tspan></text>
+            <text id="_25만Km" data-name="25만Km" class="cls-4" transform="translate(310 412)"><tspan x="0" y="0">25만Km</tspan></text>
+            <g id="dot" style="opacity:.95">
+                <circle id="타원_32" data-name="타원 32" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(190 276)"/>
+                <circle id="타원_33" data-name="타원 33" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(180 282)"/>
+                <circle id="타원_34" data-name="타원 34" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(196 293)"/>
+                <circle id="타원_35" data-name="타원 35" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(200 289)"/>
+                <circle id="타원_36" data-name="타원 36" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(184 292)"/>
+                <circle id="타원_37" data-name="타원 37" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(183 299)"/>
+                <circle id="타원_38" data-name="타원 38" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(196 293)"/>
+                <circle id="타원_39" data-name="타원 39" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(196 293)"/>
+                <circle id="타원_40" data-name="타원 40" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(196 293)"/>
+                <circle id="타원_41" data-name="타원 41" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(206 322)"/>
+                <circle id="타원_62" data-name="타원 62" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(203 323)"/>
+                <circle id="타원_42" data-name="타원 42" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(154 262)"/>
+                <circle id="타원_43" data-name="타원 43" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(166 276)"/>
+                <circle id="타원_44" data-name="타원 44" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(161 264)"/>
+                <circle id="타원_45" data-name="타원 45" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(156 272)"/>
+                <circle id="타원_46" data-name="타원 46" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(159 285)"/>
+                <circle id="타원_47" data-name="타원 47" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(163 291)"/>
+                <circle id="타원_48" data-name="타원 48" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(161 293)"/>
+                <circle id="타원_49" data-name="타원 49" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(166 299)"/>
+                <circle id="타원_50" data-name="타원 50" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(152 297)"/>
+                <circle id="타원_51" data-name="타원 51" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(158 313)"/>
+                <circle id="타원_52" data-name="타원 52" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(183 304)"/>
+                <circle id="타원_53" data-name="타원 53" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="rotate(-60 368.133 -12.625)"/>
+                <circle id="타원_54" data-name="타원 54" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(192 293)"/>
+                <circle id="타원_55" data-name="타원 55" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(203 309)"/>
+                <circle id="타원_56" data-name="타원 56" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(209 313)"/>
+                <circle id="타원_57" data-name="타원 57" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(206 303)"/>
+                <circle id="타원_58" data-name="타원 58" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(183 299)"/>
+                <circle id="타원_59" data-name="타원 59" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(183 299)"/>
+                <circle id="타원_60" data-name="타원 60" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(183 299)"/>
+                <circle id="타원_63" data-name="타원 63" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(178 297)"/>
+                <circle id="타원_61" data-name="타원 61" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(212 307)"/>
+                <circle id="타원_64" data-name="타원 64" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(217 319)"/>
+                <circle id="타원_65" data-name="타원 65" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(219 308)"/>
+                <circle id="타원_66" data-name="타원 66" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(224 326)"/>
+                <circle id="타원_67" data-name="타원 67" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(222 318)"/>
+                <circle id="타원_68" data-name="타원 68" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(235 315)"/>
+                <circle id="타원_69" data-name="타원 69" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(222 318)"/>
+                <circle id="타원_70" data-name="타원 70" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(245 315)"/>
+                <circle id="타원_71" data-name="타원 71" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(259 324)"/>
+                <circle id="타원_72" data-name="타원 72" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(249 316)"/>
+                <circle id="타원_73" data-name="타원 73" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(245 324)"/>
+                <circle id="타원_74" data-name="타원 74" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(244 333)"/>
+                <circle id="타원_75" data-name="타원 75" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(266 339)"/>
+                <circle id="타원_76" data-name="타원 76" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(253 331)"/>
+                <circle id="타원_77" data-name="타원 77" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(279 333)"/>
+                <circle id="타원_78" data-name="타원 78" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(271 340)"/>
+                <circle id="타원_79" data-name="타원 79" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(303 349)"/>
+                <circle id="타원_80" data-name="타원 80" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(287 336)"/>
+                <circle id="타원_81" data-name="타원 81" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(321 340)"/>
+                <circle id="타원_82" data-name="타원 82" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(114 238)"/>
+                <circle id="타원_83" data-name="타원 83" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(114 242)"/>
+                <circle id="타원_84" data-name="타원 84" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="rotate(-9 1641.136 -622.848)"/>
+                <circle id="타원_85" data-name="타원 85" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(114 257)"/>
+                <circle id="타원_86" data-name="타원 86" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(122 255)"/>
+                <circle id="타원_87" data-name="타원 87" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(114 278)"/>
+                <circle id="타원_88" data-name="타원 88" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(134 260)"/>
+                <circle id="타원_89" data-name="타원 89" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(125 271)"/>
+                <circle id="타원_90" data-name="타원 90" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(131 271)"/>
+            </g>
+            <path id="패스_253" data-name="패스 253" d="M4975.667 1406s125.269 93.656 220.5 94" transform="translate(-4867.167 -1155)" style="stroke:#0e87ff;stroke-linecap:round;stroke-width:2px;fill:none"/>
+            <text id="_7만Km" data-name="7만Km" transform="translate(136 400)" style="fill:#3194f7;font-family:NotoSansKR-Medium,Noto Sans KR;font-weight:500;font-size:9px;letter-spacing:-.025em"><tspan x="0" y="0">7만Km</tspan></text>
+            <path id="패스_254" data-name="패스 254" class="cls-2" d="M0 0h1v3H0z" transform="translate(73 392)"/>
+            <path id="패스_255" data-name="패스 255" class="cls-2" d="M0 0h1v3H0z" transform="translate(124 392)"/>
+            <path id="패스_256" data-name="패스 256" class="cls-2" d="M0 0h1v3H0z" transform="translate(176 392)"/>
+            <path id="패스_258" data-name="패스 258" class="cls-2" d="M0 0h1v3H0z" transform="translate(228 392)"/>
+            <path id="패스_260" data-name="패스 260" class="cls-2" d="M0 0h1v3H0z" transform="translate(332 392)"/>
+            <path id="패스_261" data-name="패스 261" class="cls-2" d="M0 0h1v3H0z" transform="translate(280 391)"/>
+            <path id="ico" d="M12 5.833A5.918 5.918 0 0 0 6 0a5.918 5.918 0 0 0-6 5.833C0 10.208 6 15 6 15s6-4.792 6-9.167" transform="translate(144 259)" style="fill:#3194f7"/>
+        </g>
+        <path id="dot_line" data-name="dot line" transform="translate(150.5 274.5)" style="stroke:#3194f7;stroke-dasharray:2 2;fill:none" d="M0 0v115"/>
+    </g>
+</svg>

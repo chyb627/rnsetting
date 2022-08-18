@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#333;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="ico_op_smartkey_on" transform="translate(14 6.656)">
+        <path id="패스_151" data-name="패스 151" class="cls-2" d="M4.577 2.625A8.85 8.85 0 0 1 10.2.75a8.85 8.85 0 0 1 5.63 1.875" transform="translate(1.297 1.049)"/>
+        <path id="패스_152" data-name="패스 152" class="cls-2" d="M7.219 5.915a4.428 4.428 0 0 1 2.813-.938 4.428 4.428 0 0 1 2.813.938" transform="translate(1.468 1.323)"/>
+        <rect id="사각형_114" data-name="사각형 114" class="cls-2" width="19.403" height="23.577" rx="3" transform="translate(1.799 11.351)"/>
+        <path id="패스_153" data-name="패스 153" class="cls-2" d="M12.843 17.631a4.512 4.512 0 1 1-5.439.018" transform="translate(1.364 2.143)"/>
+        <path id="선_54" data-name="선 54" class="cls-2" transform="translate(11.5 18.383)" d="M0 0v2.782"/>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51">
+    <defs>
+        <style>
+            .cls-2,.cls-3{fill:none;stroke:#333;stroke-linecap:round;stroke-width:1.5px}.cls-2{stroke-linejoin:round}.cls-3{stroke-miterlimit:10}
+        </style>
+    </defs>
+    <g id="ico_op_parking_on" transform="translate(10 16)">
+        <circle id="타원_26" data-name="타원 26" class="cls-2" cx="3.37" cy="3.37" r="3.37" transform="translate(8.679 13.824)"/>
+        <path id="패스_159" data-name="패스 159" class="cls-3" d="M.75.75h8.125c1.269 0 2.971 1.417 4.241 2.8a6.519 6.519 0 0 0 .981.89l4.023 2.908v.011a3.039 3.039 0 0 1 2.218 2.889v4.195A3.087 3.087 0 0 1 17.2 17.48h-1.28"/>
+        <path id="선_62" data-name="선 62" class="cls-3" transform="translate(.75 17.48)" d="M0 0h7.176"/>
+        <path id="패스_160" data-name="패스 160" class="cls-2" d="M6.184 1.82v2.648s-.54 3.775 4.456 3.775h8.586"/>
+        <path id="선_63" data-name="선 63" class="cls-2" transform="translate(17.957 13.893)" d="M0 0h1.844"/>
+        <path id="선_64" data-name="선 64" class="cls-2" transform="translate(6.598 10.8)" d="M0 0h2.081"/>
+        <path id="패스_161" data-name="패스 161" class="cls-2" d="M27.534 15.342a4.557 4.557 0 0 0 0-6.607"/>
+        <path id="패스_162" data-name="패스 162" class="cls-2" d="M30.837 5.432a10.232 10.232 0 0 1 1.931 2.739 8.855 8.855 0 0 1 0 7.736 10.232 10.232 0 0 1-1.931 2.739"/>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#262626;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="ico_op_heat_on" transform="translate(12 11)">
+        <path id="패스_179" data-name="패스 179" class="cls-2" d="M2.064 30.942s-3.245-1.782.464-5.336c3.619-3.469 9.271-.742 11.291-.68 2.157.066 3.379.577 3.708-2.226S16.784 9.846 24.2 9.269c0 0 3.256-.443 2.267 2.359s-5.273 17.1-5.273 17.1-.453 2.215-4.492 2.215z"/>
+        <path id="패스_180" data-name="패스 180" class="cls-2" d="m23.4 5.847 4.327 1.607 2.132-3.369S30.691-.087 25.962.9A6.017 6.017 0 0 0 23.4 5.847z"/>
+        <path id="패스_181" data-name="패스 181" class="cls-2" d="M5.018 9.763 3.36 12.035l1.658 2.272"/>
+        <path id="패스_182" data-name="패스 182" class="cls-2" d="M5.018 14.377 3.36 16.649l1.658 2.272"/>
+        <path id="패스_183" data-name="패스 183" class="cls-2" d="m9 9.763-1.655 2.272L9 14.307"/>
+        <path id="패스_184" data-name="패스 184" class="cls-2" d="m9 14.377-1.655 2.272L9 18.921"/>
+        <path id="패스_185" data-name="패스 185" class="cls-2" d="m13.216 9.763-1.658 2.272 1.658 2.272"/>
+        <path id="패스_186" data-name="패스 186" class="cls-2" d="m13.216 14.377-1.658 2.272 1.658 2.272"/>
+    </g>
+</svg>

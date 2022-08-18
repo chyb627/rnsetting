@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57">
+    <defs>
+        <style>
+            .cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}.cls-2{stroke:#262626}.cls-3{stroke:#3194f7}
+        </style>
+    </defs>
+    <g id="ico_reserve" transform="translate(11.895 15.392)">
+        <circle id="bg" cx="28.5" cy="28.5" r="28.5" transform="translate(-11.895 -15.392)" style="fill:#f7f7f7"/>
+        <g id="그룹_130" data-name="그룹 130" transform="translate(4.105 .608)">
+            <path id="선_99" data-name="선 99" class="cls-2" transform="translate(.75 8.696)" d="M23.35 0H0"/>
+            <path id="선_100" data-name="선 100" class="cls-2" transform="translate(7.236 .75)" d="M0 0v2.919"/>
+            <path id="선_101" data-name="선 101" class="cls-2" transform="translate(17.614 .75)" d="M0 0v2.919"/>
+            <path id="패스_232" data-name="패스 232" class="cls-2" d="M14.771 24.262H4.641A3.891 3.891 0 0 1 .75 20.37V6.1a3.891 3.891 0 0 1 3.891-3.891h15.567A3.891 3.891 0 0 1 24.1 6.1v6.391"/>
+            <path id="선_102" data-name="선 102" class="cls-3" transform="translate(21.788 18.155)" d="M0 0v4.328"/>
+            <path id="선_103" data-name="선 103" class="cls-3" transform="translate(19.625 20.318)" d="M0 0h4.328"/>
+            <path id="패스_233" data-name="패스 233" class="cls-3" d="M18.182 16.712a5.1 5.1 0 1 1 0 7.213 5.1 5.1 0 0 1 0-7.213"/>
+        </g>
+    </g>
+</svg>

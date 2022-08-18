@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   buttons: {
-    marginTop: 64,
+    marginTop: 32,
   },
 });
 
