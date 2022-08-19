@@ -1,3 +1,4 @@
+import { useNavigation } from '@react-navigation/native';
 import React, { useState } from 'react';
 import { Text, View, Alert, Image } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
@@ -5,7 +6,8 @@ import RNBPressable from '~ui/RNBPressable';
 import TextInput from '~ui/CustomTextInput';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-const Login = () => {
+const Login = (props) => {
+  const navigation = useNavigation();
   const [form, setForm] = useState({
     email: '',
     password: '',
@@ -53,7 +55,7 @@ const Login = () => {
             </View>
             <RNBPressable
               onPress={() => {
-                // setRootBottomTabs();
+                navigation.navigate('MainTab', { ...props });
               }}
               className="justify-center items-center h-14 rounded-lg bg-primary my-1">
               <Text className="text-lg text-white font-medium">로그인</Text>
@@ -111,8 +113,7 @@ const Login = () => {
                 </View>
                 <Text
                   onPress={async () => {
-                    // console.log('메인');
-                    // await setRootBottomTabs();
+                    // navigation.navigate('RootStack');
                   }}
                   className="text-base text-white font-medium">
                   네이버 로그인

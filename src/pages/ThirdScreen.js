@@ -4,7 +4,7 @@ import { View, Text } from 'react-native';
 function ThirdScreen() {
   return (
     <View>
-      <Text> Third </Text>
+      <Text> MessageScreen </Text>
     </View>
   );
 }

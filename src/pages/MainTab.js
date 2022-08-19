@@ -1,32 +1,46 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import FirstScreen from './FirstScreen';
-import SecondScreen from './SecondScreen';
-import ThirdScreen from './ThirdScreen';
+import HomeScreen from './HomeScreen';
+import MyProfileStack from './MyProfileStack';
+// import ThirdScreen from './ThirdScreen';
+import CameraButton from '../components/CameraButton';
+import { View, StyleSheet } from 'react-native';
 
 const Tab = createBottomTabNavigator();
 
 function MainTab() {
   return (
-    <Tab.Navigator>
-      <Tab.Screen
-        name="First"
-        component={FirstScreen}
-        options={{ title: '홈', tabBarIcon: ({ color, size }) => <Icon name="home" color={color} size={size} /> }}
-      />
-      <Tab.Screen
-        name="Second"
-        component={SecondScreen}
-        options={{ title: '알림', tabBarIcon: ({ color, size }) => <Icon name="notifications" color={color} size={size} /> }}
-      />
-      <Tab.Screen
+    <>
+      <View style={styles.block}>
+        <Tab.Navigator>
+          <Tab.Screen
+            name="Home"
+            component={HomeScreen}
+            options={{ title: '홈', tabBarIcon: ({ color, size }) => <Icon name="home" color={color} size={size} /> }}
+          />
+          <Tab.Screen
+            name="MyProfileStack"
+            component={MyProfileStack}
+            options={{ title: '내정보', tabBarIcon: ({ color, size }) => <Icon name="person" color={color} size={size} /> }}
+          />
+          {/* <Tab.Screen
         name="Third"
         component={ThirdScreen}
         options={{ title: '메세지', tabBarIcon: ({ color, size }) => <Icon name="message" color={color} size={size} /> }}
-      />
-    </Tab.Navigator>
+      /> */}
+        </Tab.Navigator>
+      </View>
+      <CameraButton />
+    </>
   );
 }
+
+const styles = StyleSheet.create({
+  block: {
+    flex: 1,
+    zIndex: 0,
+  },
+});
 
 export default MainTab;

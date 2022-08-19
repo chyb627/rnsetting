@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-function SecondScreen() {
+function MyProfileStack() {
   return (
     <View>
-      <Text> Second </Text>
+      <Text> MyProfileStack </Text>
     </View>
   );
 }
 
-export default SecondScreen;
+export default MyProfileStack;
