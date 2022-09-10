@@ -7,6 +7,9 @@ import MainTab from './MainTab';
 import UploadScreen from './UploadScreen';
 import FourthScreen from './FourthScreen';
 
+import SignInScreen from './SignInScreen';
+import WelcomeScreen from './WelcomeScreen';
+
 const Stack = createNativeStackNavigator();
 
 function RootStack() {
@@ -16,6 +19,8 @@ function RootStack() {
 
   return (
     <Stack.Navigator>
+      <Stack.Screen name="SignIn" component={SignInScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="Welcome" component={WelcomeScreen} options={{ headerShown: false }} />
       <Stack.Screen name="Login" component={Login} options={{ headerShown: false }} />
       <Stack.Screen name="MainTab" component={MainTab} options={{ headerShown: false }} />
       <Stack.Screen name="Upload" component={UploadScreen} options={{ title: '새 게시물', headerBackTitle: '뒤로가기' }} />
