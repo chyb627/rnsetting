@@ -1,25 +1,30 @@
 import { useNavigation, useRoute } from '@react-navigation/native';
 import React, { useState } from 'react';
-import { Alert, Platform, View, Text, StyleSheet, Keyboard, KeyboardAvoidingView } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { signOut } from '../lib/auth';
 import { createUser } from '../lib/users';
 import BorderedInput from './BorderedInput';
 import CustomButton from './CustomButton';
+import { useUserContext } from '../contexts/UserContext';
 
 function SetupProfile(props) {
   const [displayName, setDisplayName] = useState('');
   const navigation = useNavigation();
+  const { setUser } = useUserContext();
 
   const { params } = useRoute();
   const { uid } = params || {};
 
   const onSubmit = () => {
-    createUser({
+    const user = {
       id: uid,
       displayName,
       photoURL: null,
-    });
+    };
+    createUser(user);
+    setUser(user);
   };
+
   const onCancel = () => {
     signOut();
     navigation.goBack();
@@ -37,7 +42,7 @@ function SetupProfile(props) {
           returnKeyType="next"
         />
         <View style={styles.buttons}>
-          <CustomButton title="다음" hasMarginBottom onPress={onSubmit} />
+          <CustomButton title="다음" onPress={onSubmit} hasMarginBottom />
           <CustomButton title="취소" onPress={onCancel} theme="secondary" />
         </View>
       </View>
@@ -47,8 +52,8 @@ function SetupProfile(props) {
 
 const styles = StyleSheet.create({
   block: {
-    marginTop: 24,
     alignItems: 'center',
+    marginTop: 24,
     paddingHorizontal: 16,
     width: '100%',
   },

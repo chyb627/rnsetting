@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Alert, Platform, View, Text, StyleSheet, Keyboard, KeyboardAvoidingView } from 'react-native';
+import { KeyboardAvoidingView, Platform, StyleSheet, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import SetupProfile from '../components/SetupProfile';

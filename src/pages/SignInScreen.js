@@ -5,6 +5,7 @@ import SignButtons from '../components/SignButtons';
 import SignInForm from '../components/SignForm';
 import { signIn, signUp } from '../lib/auth';
 import { getUser } from '../lib/users';
+import { useUserContext } from '../contexts/UserContext';
 
 function SignInScreen(props) {
   const { navigation, route } = props;
@@ -16,12 +17,14 @@ function SignInScreen(props) {
   });
 
   const [loading, setLoading] = useState();
+  const { setUser } = useUserContext();
 
   const createChangeTextHandler = (name) => (value) => {
     setForm({ ...form, [name]: value });
   };
   const onSubmit = async () => {
     Keyboard.dismiss();
+
     const { email, password, confirmPassword } = form;
 
     if (isSignUp && password !== confirmPassword) {
@@ -31,6 +34,7 @@ function SignInScreen(props) {
 
     setLoading(true);
     const info = { email, password };
+
     try {
       const { user } = isSignUp ? await signUp(info) : await signIn(info);
       // console.log('user :::', user);
@@ -38,7 +42,7 @@ function SignInScreen(props) {
       if (!profile) {
         navigation.navigate('Welcome', { uid: user.uid });
       } else {
-        //구현예정
+        setUser(profile);
       }
     } catch (e) {
       const messages = {
