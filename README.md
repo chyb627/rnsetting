@@ -59,3 +59,28 @@ PostScreen : 하나의 포스트를 볼 수 있는 화면. HomeStack과 컴포�
 -SettingScreen : 설정 화면
 -SignInScreen : 로그인 화면
 -WelcomeScreen : 회원가입 후 프로필 사진과 이름을 설정하는 화면
+
+## useEffext async/await
+
+useEffect 내부에서 async/await를 사용하고 싶용하기.
+
+```javascript
+useEffect(() => {
+  const fn = async () => {
+    const _posts = await getPosts();
+    setPosts(_posts);
+  };
+  fn();
+}, []);
+```
+
+useEffect에 등록하는 함수 자체를 async로 만들면 안 되기 때문에 내부에서 async 함수를 선언하고 호출하는 방식으로 구현.
+
+## firebase storage 오류
+
+오류 내용
+The server has terminated the upload session
+
+원인을 찾아보니 Storage의 Rules를 수정해주어야한다.
+기본 설정은 allow read, write: if false; 라고 되어있을 것이다.
+이 부분에서 false를 true로 변경시켜주면 모든 사용자에게 권한을 주는 것이고 request.auth != null; 이렇게 변경시켜주면 로그인 한 사용자에게 권한을 주는 것이다.

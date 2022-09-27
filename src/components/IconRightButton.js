@@ -2,9 +2,7 @@ import React from 'react';
 import { View, StyleSheet, Pressable, Platform } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-function IconRightButton(props) {
-  const { name, color, onPress } = props;
-
+function IconRightButton({ name, color, onPress }) {
   return (
     <View style={styles.block}>
       <Pressable

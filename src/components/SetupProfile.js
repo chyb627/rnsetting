@@ -8,6 +8,7 @@ import CustomButton from './CustomButton';
 import { useUserContext } from '../contexts/UserContext';
 import { launchImageLibrary } from 'react-native-image-picker';
 import storage from '@react-native-firebase/storage';
+import Avatar from './Avatar';
 
 function SetupProfile(props) {
   const [displayName, setDisplayName] = useState('');
@@ -73,11 +74,8 @@ function SetupProfile(props) {
 
   return (
     <View style={styles.block}>
-      <Pressable onPress={onSelectImage}>
-        <Image
-          style={styles.circle}
-          source={response ? { uri: response?.assets[0]?.uri } : require('../assets/images/user.png')}
-        />
+      <Pressable style={styles.circle} onPress={onSelectImage}>
+        <Avatar source={response && { uri: response.uri }} size={128} />
       </Pressable>
       <View style={styles.form}>
         <BorderedInput
