@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import { ActivityIndicator, FlatList, Image, StyleSheet, Text, View, RefreshControl } from 'react-native';
-import { getPosts, getNewerPosts, getOlderPosts, PAGE_SIZE } from '../lib/posts';
+import { ActivityIndicator, FlatList, StyleSheet, Text, View, RefreshControl } from 'react-native';
 import { getUser } from '../lib/users';
 import Avatar from './Avatar';
 import PostGridItem from './PostGridItem';
 import usePosts from '../hooks/usePosts';
-import { useUserContext } from '../contexts/UserContext';
+import { useSelector } from 'react-redux';
+import { RootState } from '../store/reducer';
 import events from '../lib/events';
 
 function Profile({ userId }) {
   const [user, setUser] = useState(null);
   const { posts, noMorePost, refreshing, onLoadMore, onRefresh, removePost } = usePosts(userId);
-  const { user: me } = useUserContext();
+  const me = useSelector((state: RootState) => state.user);
   const isMyProfile = me.id === userId;
 
   useEffect(() => {

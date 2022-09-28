@@ -62,7 +62,7 @@ PostScreen : 하나의 포스트를 볼 수 있는 화면. HomeStack과 컴포�
 
 ## useEffext async/await
 
-useEffect 내부에서 async/await를 사용하고 싶용하기.
+useEffect 내부에서 async/await를 사용하고 적용하기.
 
 ```javascript
 useEffect(() => {
@@ -84,3 +84,57 @@ The server has terminated the upload session
 원인을 찾아보니 Storage의 Rules를 수정해주어야한다.
 기본 설정은 allow read, write: if false; 라고 되어있을 것이다.
 이 부분에서 false를 true로 변경시켜주면 모든 사용자에게 권한을 주는 것이고 request.auth != null; 이렇게 변경시켜주면 로그인 한 사용자에게 권한을 주는 것이다.
+
+## 타입스크립트
+
+yarn add -D typescript @types/jest @types/react-native @types/react-native-push-notification @types/react-native-vector-icons @types/react-test-renderer @typescript-eslint/eslint-plugin @typescript-eslint/parser
+
+옵셔널 파라미터 : 옵셔널 파라미터는 생략해도 되는 파라미터를 의미함. (isDouble?: boolean)
+
+interface : 타입스크립트에서 객체나 클래스를 위한 타입을 정할 때 사용한다.
+
+```typescript
+interface Profile {
+  id: nember;
+  username: string;
+  displayName: string;
+}
+```
+
+- interface 상속하기
+
+```typescript
+interface Acocount extends Profile {
+  email: string;
+  password: string;
+}
+
+const account: Account = {
+  id: 1,
+  username: 'cha';
+  displayName: 'chabiri';
+  email: 'cha@email.com';
+  password: '123123';
+}
+
+```
+## react-native-vector-icons 에러
+
+링크
+[https://hanarotg.medium.com/rn-ios-react-native-vector-icons-%EC%97%90%EC%84%9C-%EC%95%A0%EB%A8%B9%EB%8A%94-%EC%A4%91%EC%83%9D%EB%93%A4%EC%97%90%EA%B2%8C-e80e1f4aaf89]
+
+에러내용
+[error React Native CLI uses autolinking for native dependencies, but the following modules are linked manually:
+- react-native-vector-icons (to unlink run: "react-native unlink react-native-vector-icons")
+This is likely happening when upgrading React Native from below 0.60 to 0.60 or above. Going forward, you can unlink this dependency via "react-native unlink <dependency>" and it will be included in your app automatically. If a library isn't compatible with autolinking, disregard this message and notify the library maintainers.]
+
+이유
+RN는 npm에서 설치한 모듈들을 자동으로 연결해주는데, Cocoapod을 이용하였기에 autolinking이 아닌 수동 연결로 간주하기 때문이다.
+
+해결방법
+npx react-native unlink react-native-vector-icons
+
+## Redux
+
+yarn add @reduxjs/toolkit react-redux redux-flipper react-native-flipper
+

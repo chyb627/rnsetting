@@ -6,16 +6,24 @@ import MainTab from './MainTab';
 import SignInScreen from './SignInScreen';
 import WelcomeScreen from './WelcomeScreen';
 import UploadScreen from './UploadScreen';
-import { useUserContext } from '../contexts/UserContext';
+// import { useUserContext } from '../contexts/UserContext';
 import { getUser } from '../lib/users';
 import { subscribeAuth } from '../lib/auth';
 import ModifyScreen from './ModifyScreen';
 import SettingScreen from './SettingScreen';
+import { useSelector } from 'react-redux';
+import { RootState } from '../store/reducer';
+import { useAppDispatch } from '../store';
+import userSlice from '../slice/user';
 
 const Stack = createNativeStackNavigator();
 
 function RootStack() {
-  const { user, setUser } = useUserContext();
+  const dispatch = useAppDispatch();
+  const isLoggedIn = useSelector((state: RootState) => !!state.user.id);
+  // const testUser = useSelector((state: RootState) => state.user);
+  // console.log('testUser:::', testUser);
+  // const { user, setUser } = useUserContext();
   // console.log('user::::', user);
 
   useEffect(() => {
@@ -29,12 +37,18 @@ function RootStack() {
         return;
       }
       const profile = await getUser(currentUser.uid);
+
       if (!profile) {
         return;
       }
-      setUser(profile);
+      // setUser(profile);
+      dispatch(
+        userSlice.actions.setUser({
+          ...profile,
+        }),
+      );
     });
-  }, [setUser]);
+  }, [dispatch]);
 
   // useEffect(() => {
   //   SplashScreen.hide();
@@ -42,7 +56,7 @@ function RootStack() {
 
   return (
     <Stack.Navigator>
-      {user ? (
+      {isLoggedIn ? (
         <>
           <Stack.Screen name="MainTab" component={MainTab} options={{ headerShown: false }} />
           <Stack.Screen name="Upload" component={UploadScreen} options={{ title: '새 게시물', headerBackTitle: '뒤로가기' }} />

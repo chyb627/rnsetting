@@ -5,7 +5,8 @@ import SignButtons from '../components/SignButtons';
 import SignInForm from '../components/SignForm';
 import { signIn, signUp } from '../lib/auth';
 import { getUser } from '../lib/users';
-import { useUserContext } from '../contexts/UserContext';
+import { useAppDispatch } from '../store';
+import userSlice from '../slice/user';
 
 function SignInScreen(props) {
   const { navigation, route } = props;
@@ -17,7 +18,7 @@ function SignInScreen(props) {
   });
 
   const [loading, setLoading] = useState();
-  const { setUser } = useUserContext();
+  const dispatch = useAppDispatch();
 
   const createChangeTextHandler = (name) => (value) => {
     setForm({ ...form, [name]: value });
@@ -42,7 +43,11 @@ function SignInScreen(props) {
       if (!profile) {
         navigation.navigate('Welcome', { uid: user.uid });
       } else {
-        setUser(profile);
+        dispatch(
+          userSlice.actions.setUser({
+            ...profile,
+          }),
+        );
       }
     } catch (e) {
       const messages = {

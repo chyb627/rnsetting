@@ -1,14 +1,14 @@
 import React from 'react';
 import { StyleSheet, View, Text, Pressable, Platform } from 'react-native';
-import { useUserContext } from '../contexts/UserContext';
+import { useAppDispatch } from '../store';
+import userSlice from '../slice/user';
 import { signOut } from '../lib/auth';
 
 function SettingScreen() {
-  const { setUser } = useUserContext();
-
+  const dispatch = useAppDispatch();
   const onLogout = async () => {
     await signOut();
-    setUser(null);
+    dispatch(userSlice.actions.setUser(null));
   };
 
   return (

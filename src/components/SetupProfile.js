@@ -1,19 +1,20 @@
 import { useNavigation, useRoute } from '@react-navigation/native';
 import React, { useState } from 'react';
-import { Image, Pressable, StyleSheet, View, Platform, ActivityIndicator } from 'react-native';
+import { Pressable, StyleSheet, View, Platform, ActivityIndicator } from 'react-native';
 import { signOut } from '../lib/auth';
 import { createUser } from '../lib/users';
 import BorderedInput from './BorderedInput';
 import CustomButton from './CustomButton';
-import { useUserContext } from '../contexts/UserContext';
+import { useAppDispatch } from '../store';
+import userSlice from '../slice/user';
 import { launchImageLibrary } from 'react-native-image-picker';
 import storage from '@react-native-firebase/storage';
 import Avatar from './Avatar';
 
 function SetupProfile(props) {
+  const dispatch = useAppDispatch();
   const [displayName, setDisplayName] = useState('');
   const navigation = useNavigation();
-  const { setUser } = useUserContext();
   const [response, setResponse] = useState(null);
   const [loading, setLoading] = useState(false);
 
@@ -46,7 +47,11 @@ function SetupProfile(props) {
     };
 
     createUser(user);
-    setUser(user);
+    dispatch(
+      userSlice.actions.setUser({
+        ...user,
+      }),
+    );
   };
 
   const onCancel = () => {

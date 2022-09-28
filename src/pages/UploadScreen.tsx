@@ -12,7 +12,8 @@ import {
 import { useNavigation, useRoute } from '@react-navigation/native';
 import IconRightButton from '../components/IconRightButton';
 import storage from '@react-native-firebase/storage';
-import { useUserContext } from '../contexts/UserContext';
+import { useSelector } from 'react-redux';
+import { RootState } from '../store/reducer';
 import { v4 } from 'uuid';
 import { createPost } from '../lib/posts';
 import events from '../lib/events';
@@ -21,7 +22,7 @@ function UploadScreen() {
   const route = useRoute();
   const { res } = route.params || {};
   const { width } = useWindowDimensions();
-  const { user } = useUserContext();
+  const user = useSelector((state: RootState) => state.user);
 
   const animation = useRef(new Animated.Value(width)).current;
   const [isKeyboardOpen, setIsKeyboardOpen] = useState(false);
