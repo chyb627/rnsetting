@@ -12,17 +12,15 @@ import { subscribeAuth } from '../lib/auth';
 import ModifyScreen from './ModifyScreen';
 import SettingScreen from './SettingScreen';
 import { useSelector } from 'react-redux';
-import { RootState } from '../store/reducer';
-import { useAppDispatch } from '../store';
-import userSlice from '../slice/user';
+import { RootState } from '~store/reducer';
+import { useAppDispatch } from '~store';
+import userSlice from '~slice/user';
 
 const Stack = createNativeStackNavigator();
 
 function RootStack() {
   const dispatch = useAppDispatch();
   const isLoggedIn = useSelector((state: RootState) => !!state.user.id);
-  // const testUser = useSelector((state: RootState) => state.user);
-  // console.log('testUser:::', testUser);
   // const { user, setUser } = useUserContext();
   // console.log('user::::', user);
 
@@ -49,10 +47,6 @@ function RootStack() {
       );
     });
   }, [dispatch]);
-
-  // useEffect(() => {
-  //   SplashScreen.hide();
-  // }, []);
 
   return (
     <Stack.Navigator>
