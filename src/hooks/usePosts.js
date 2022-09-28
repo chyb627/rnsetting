@@ -1,10 +1,29 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { getNewerPosts, getOlderPosts, getPosts, PAGE_SIZE } from '../lib/posts';
+import { useUserContext } from '../contexts/UserContext';
+import usePostsEventEffect from './usePostsEventEffect';
 
 export default function usePosts(userId) {
   const [posts, setPosts] = useState(null);
   const [noMorePost, setNoMorePost] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
+  const { user } = useUserContext();
+
+  const updatePost = useCallback(
+    ({ postId, description }) => {
+      // id가 일치하는 포스트를 찾아서 description 변경
+      const nextPosts = posts.map((post) =>
+        post.id === postId
+          ? {
+              ...post,
+              description,
+            }
+          : post,
+      );
+      setPosts(nextPosts);
+    },
+    [posts],
+  );
 
   const onLoadMore = async () => {
     if (noMorePost || !posts || posts.lenth < PAGE_SIZE) {
@@ -18,7 +37,7 @@ export default function usePosts(userId) {
     setPosts(posts.concat(olderPosts));
   };
 
-  const onRefresh = async () => {
+  const onRefresh = useCallback(async () => {
     if (!posts || posts.length === 0 || refreshing) {
       return;
     }
@@ -30,7 +49,14 @@ export default function usePosts(userId) {
       return;
     }
     setPosts(newerPosts.concat(posts));
-  };
+  }, [posts, userId, refreshing]);
+
+  const removePost = useCallback(
+    (postId) => {
+      setPosts(posts.filter((post) => post.id !== postId));
+    },
+    [posts],
+  );
 
   useEffect(() => {
     getPosts({ userId }).then((_posts) => {
@@ -41,11 +67,19 @@ export default function usePosts(userId) {
     });
   }, [userId]);
 
+  usePostsEventEffect({
+    refresh: onRefresh,
+    removePost,
+    enabled: !userId || userId === user.id,
+    updatePost,
+  });
+
   return {
     posts,
     noMorePost,
     refreshing,
     onLoadMore,
     onRefresh,
+    removePost,
   };
 }

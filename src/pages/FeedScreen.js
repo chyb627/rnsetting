@@ -1,11 +1,30 @@
 import React, { useEffect, useState } from 'react';
 import { FlatList, ActivityIndicator, StyleSheet, RefreshControl, Image, Text } from 'react-native';
+import SplashScreen from 'react-native-splash-screen';
 import PostCard from '../components/PostCard';
 import { getNewerPosts, getPosts, PAGE_SIZE, getOlderPosts } from '../lib/posts';
 import usePosts from '../hooks/usePosts';
+import events from '../lib/events';
 
 function FeedScreen() {
-  const { posts, noMorePost, refreshing, onLoadMore, onRefresh } = usePosts();
+  const { posts, noMorePost, refreshing, onLoadMore, onRefresh, removePost } = usePosts();
+
+  const postsReady = posts != null;
+  useEffect(() => {
+    if (postsReady) {
+      SplashScreen.hide();
+    }
+  }, [postsReady]);
+
+  useEffect(() => {
+    events.addListener('refresh', onRefresh);
+    events.addListener('removePost', removePost);
+    return () => {
+      events.removeListener('refresh', onRefresh);
+      events.removeListener('removePost', removePost);
+    };
+  }, [onRefresh, removePost]);
+
   return (
     <FlatList
       data={posts}

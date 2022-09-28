@@ -21,6 +21,7 @@
     "@react-navigation/native": "^6.0.11",
     "@react-navigation/native-stack": "^6.7.0",
     "babel-plugin-tailwind-rn": "git+https://github.com/chyb627/babel-plugin-tailwind-rn.git",
+    "eventemitter3": "^4.0.7",
     "react": "17.0.2",
     "react-native": "0.68.2",
     "react-native-device-info": "^10.0.2",
