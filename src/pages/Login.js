@@ -23,12 +23,12 @@ const Login = (props) => {
       <KeyboardAwareScrollView className="flex h-full w-full px-5 bg-white rounded-lg">
         <View className="justify-center py-16">
           <View className="h-22 my-1">
-            <Text className="text-5xl font-bold text-black pb-1">T.M.I, </Text>
+            <Text className="text-5xl font-bold text-black pb-1">영차영차, </Text>
             <Text className="text-5xl font-bold text-black">시작해 보세요.</Text>
           </View>
 
           <View className="h-6 w-full">
-            <Text className="text-base text-black font-normal">TMI에서 다양한 정보를 만나보세요</Text>
+            <Text className="text-base text-black font-normal">영차영차에서 다양한 정보를 만나보세요</Text>
           </View>
         </View>
         <View className="justify-center py-6">
