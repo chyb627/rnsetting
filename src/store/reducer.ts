@@ -8,7 +8,7 @@ const rootReducer = combineReducers({
   // order: orderSlice.reducer,
 });
 
-// 타입스크립트 때문에 만듬
+// 타입스크립트
 export type RootState = ReturnType<typeof rootReducer>;
 export default rootReducer;
 

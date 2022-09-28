@@ -14,7 +14,7 @@ const store = configureStore({
 });
 export default store;
 
-// 타입스크립트 때문에 만듬
+// 타입스크립트
 export type AppDispatch = typeof store.dispatch;
 export const useAppDispatch = () => useDispatch<AppDispatch>();
 

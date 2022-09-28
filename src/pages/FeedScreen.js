@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { FlatList, ActivityIndicator, StyleSheet, RefreshControl, Image, Text } from 'react-native';
+import React, { useEffect } from 'react';
+import { FlatList, ActivityIndicator, StyleSheet, RefreshControl } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
 import PostCard from '../components/PostCard';
-import { getNewerPosts, getPosts, PAGE_SIZE, getOlderPosts } from '../lib/posts';
 import usePosts from '../hooks/usePosts';
 import events from '../lib/events';
 

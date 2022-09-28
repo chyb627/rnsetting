@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, TextInput, StyleSheet } from 'react-native';
+import { TextInput, StyleSheet } from 'react-native';
 
 function BorderedInput(props, ref) {
   // const { hasMarginBottom, onChangeText, value, placeholder } = props;

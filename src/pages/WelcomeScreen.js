@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { KeyboardAvoidingView, Platform, StyleSheet, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Pressable, StyleSheet, Platform, Modal, Text } from 'react-native';
+import { View, Pressable, StyleSheet, Modal, Text } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 function UploadModeModal(props) {
