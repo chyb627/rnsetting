@@ -138,3 +138,7 @@ npx react-native unlink react-native-vector-icons
 
 yarn add @reduxjs/toolkit react-redux redux-flipper react-native-flipper
 
+## DismissKeyboardView
+
+DismissKeyboardView 컴포넌트 추가. 
+DismissKeyboardView를 사용하면 인풋아닌곳을 누르면 키보드가 내려감. 키보드 화면가림방지 기능이 있음.
